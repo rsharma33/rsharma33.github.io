@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"successfully"
+			],
+			[
+				"mo",
+				"module\tJS module pattern"
+			],
+			[
+				"si",
+				"script"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"bord",
+				"border-spacing"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/rajesh sharma/Desktop/digital-resume/index.html",
+			"settings":
+			{
+				"buffer_size": 573,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 265.0,
+		"last_filter": "form",
+		"selected_items":
+		[
+			[
+				"form",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"co",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"code",
+				"Code Folding: Unfold All"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/software/Delcam PowerShape 2015 x86 & x64/_SolidSQUAD_/Win32/readme.txt",
+		"/C/Users/rajesh sharma/Documents/GitHub/rsharma33.github.io/index.html",
+		"/C/Users/rajesh sharma/Desktop/digital-resume/naukri.html",
+		"/C/Users/rajesh sharma/Downloads/csv_file.txt",
+		"/E/xampp/htdocs/ui-coder/view/css/custom.css",
+		"/E/xampp/htdocs/ui-coder/index.php",
+		"/E/xampp/htdocs/ui-coder/includes/_header.php",
+		"/E/nodejs/node_modules/lgtv/index.html",
+		"/C/Users/rajesh sharma/Desktop/index.html",
+		"/C/Users/rajesh sharma/Downloads/firechat-master/firechat-master/examples/anonymous/index.html",
+		"/E/firebase-app/public/index.html",
+		"/E/firebase-app/public/loggedin.html",
+		"/C/Users/rajesh sharma/Desktop/site-data/firebaseui-web/tnc.html",
+		"/C/Users/rajesh sharma/Downloads/firebase-arduino-master/firebase-arduino-master/examples/FirebaseNeoPixel_ESP8266/public/index.html",
+		"/C/Users/rajesh sharma/Desktop/site-data/firebaseui-web/index.php",
+		"/C/Users/rajesh sharma/Desktop/site-data/firebaseui-web/loggedin.html",
+		"/E/xbox/SNES360betaV0.21/Readme.txt",
+		"/E/mobilebackus/tour-maker/tour-maker-child/tour-maker-child/functions.php",
+		"/C/Users/rajesh sharma/AppData/Local/Temp/fz3temp-1/indexxx.php",
+		"/E/xampp/htdocs/wordpress-4.7/wordpress/phpinfo.php",
+		"/C/Users/rajesh sharma/Documents/Arduino/libraries/firebase-arduino-master/src/third-party/arduino-json-5.6.7/keywords.txt",
+		"/C/Users/rajesh sharma/Desktop/samaika.txt",
+		"/C/Users/rajesh sharma/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/C/Users/rajesh sharma/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/rajesh sharma/Desktop/site-data/index.html",
+		"/C/Users/rajesh sharma/Desktop/site-data/view.js",
+		"/E/Adobe Creative Suite 6 (cs6) Master Collection Activator/Adobe Creative Suite 6 (cs6) Master Collection Activator/Readme.txt",
+		"/C/Users/rajesh sharma/Desktop/coming-soon-page/coming-soon-page/index.html",
+		"/E/xampp/htdocs/ui-coder/database/sqlite_connection.php",
+		"/C/Users/rajesh sharma/Desktop/firebase-timetracker/js.html",
+		"/E/xampp/htdocs/ui-coder/sidebars/mod_bankdetail_sidelinks.php",
+		"/E/xampp/phpMyAdmin/config.inc.php",
+		"/E/xampp/htdocs/ui-coder/liability.php",
+		"/C/Users/rajesh sharma/Desktop/firebase-timetracker/code.gs",
+		"/C/Users/rajesh sharma/Desktop/firebase-timetracker/css.html",
+		"/C/Users/rajesh sharma/Desktop/firebase-timetracker/index.html",
+		"/C/Users/rajesh sharma/Desktop/temp2.html",
+		"/C/Users/rajesh sharma/Desktop/coming-soon-page/coming-soon-page/index.php",
+		"/E/xampp/htdocs/ui-coder/bank.php",
+		"/E/xampp/htdocs/ui-coder/content/financial_info/bank/bimlesh_bob_sbacc.php",
+		"/E/xampp/htdocs/ui-coder/static-pages.php",
+		"/E/xampp/htdocs/ui-coder/personal-info.php",
+		"/E/xampp/htdocs/ui-coder/content/financial_info/liability.php",
+		"/E/xampp/htdocs/ui-coder/bills.php",
+		"/E/xampp/htdocs/ui-coder/lib/utility.php",
+		"/E/xampp/htdocs/ui-coder/content/general/liability.php",
+		"/E/xampp/htdocs/ui-coder/templates/default.php",
+		"/C/Users/rajesh sharma/Documents/js-tv-remote-2015-02-24/example.html",
+		"/C/Users/rajesh sharma/Documents/js-tv-remote-2015-02-24/JSTVRemote.js",
+		"/E/xampp/htdocs/ui-coder/lib/config.php",
+		"/E/xampp/htdocs/ui-coder/content/general/electricity.php",
+		"/E/xampp/htdocs/ui-coder/database/readme.txt",
+		"/E/xampp/htdocs/ui-coder/lib/counter.txt",
+		"/E/nodejs/node_modules/lgtv/examples/show-float.js",
+		"/E/nodejs/node_modules/lgtv/index.html.txt",
+		"/C/Users/rajesh sharma/Documents/alphabetical_glossary/alphabetical_glossary/alphabetical_glossary.html",
+		"/C/Users/rajesh sharma/Desktop/emailtemplates/email.html",
+		"/C/Users/rajesh sharma/Desktop/email.html",
+		"/C/Users/rajesh sharma/Downloads/MyApplication/MyApplication/app/src/main/java/bughunters/tashfik/myapplication/MainActivity.java"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"spreadsheet",
+			"tabname",
+			"tab",
+			"warning-definitive",
+			"class=\"content\">\n          ",
+			"\n        </td>",
+			"class=\"alpha\">\n          ",
+			"\n          \n        ",
+			"<br>\n          ",
+			"</a>\n        </li>",
+			"\n        ",
+			"\n          ",
+			"</td>",
+			"<td>",
+			"progmemPrint",
+			"LCD_RESET",
+			"tft",
+			"fillScreen",
+			"sendkey",
+			"setTv",
+			"set",
+			"key",
+			"> <",
+			"footer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"class=\"content\">",
+			"</td>",
+			"class=\"alpha\">",
+			"",
+			"</a></li>",
+			"",
+			"</li>",
+			"<li>",
+			"><"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/rajesh sharma/Desktop/digital-resume/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 573,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								573,
+								573
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
