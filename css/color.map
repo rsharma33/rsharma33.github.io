@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/color.css",
+	"sources": [
+		"../sass/color.scss"
+	],
+	"sourcesContent": [
+		"body{\r\n    color: #ffffff;\r\n}"
+	],
+	"mappings": ";AAAA,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,OAAQ,GAClB",
+	"names": []
+}

@@ -1,0 +1,95 @@
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-2 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-3 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-4 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-5 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-6 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-7 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-8 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-9 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-10 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-11 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-12 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-13 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-14 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-15 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+/* styles-16 */
+/* .header */
+/* .header .intro */
+/* .header .contact-info */
+/* .page-nav-wrapper */
+.timeline .job-meta { width: 220px; }
+
+.skillbar { position: relative; display: block; margin-bottom: 15px; width: 100%; background: #eeeeee; height: 35px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: 0.4s linear; -moz-transition: 0.4s linear; -ms-transition: 0.4s linear; -o-transition: 0.4s linear; transition: 0.4s linear; -webkit-transition-property: width, background-color; -moz-transition-property: width, background-color; -ms-transition-property: width, background-color; -o-transition-property: width, background-color; transition-property: width, background-color; }
+
+.skillbar-title { position: absolute; top: 0; left: 0; width: auto; font-weight: bold; font-size: 13px; color: #ffffff; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; display: block; padding: 0 20px; height: 35px; line-height: 35px; }
+
+.skillbar-bar { height: 35px; width: 0px; border-radius: 3px; text-align: right; color: #ffffff; line-height: 40px; font-size: 10px; padding-right: 8px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+
+.skill-bar-percent { position: absolute; right: 10px; top: 0; font-size: 11px; height: 35px; line-height: 35px; color: #ffffff; color: rgba(0, 0, 0, 0.4); }
+
+@media screen and (max-width: 600px) { table { border: 0; }
+  table thead { display: none; }
+  table tr { margin-bottom: 10px; display: block; border-bottom: 2px solid #ddd; }
+  table td { display: block; text-align: right; font-size: 13px; border-bottom: 1px dotted #ccc; }
+  table td:last-child { border-bottom: 0; }
+  table td:before { content: attr(data-label); float: left; text-transform: uppercase; font-weight: bold; } }
