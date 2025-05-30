@@ -7,16 +7,15 @@ import Paper from '@mui/material/Paper';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import Brightness2Icon from '@mui/icons-material/Brightness2';
 import LaptopIcon from '@mui/icons-material/Laptop';
-import { ThemeModeContext } from '@/app/layout';
+import { useAppContext } from '@/context/AppContext';
 
 export default function ModeSwitch() {
-    const { mode, setMode } = React.useContext(ThemeModeContext);
+    const { mode, setMode } = useAppContext();
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
     const handleFabClick = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorEl(anchorEl ? null : event.currentTarget);
     };
-    const open = Boolean(anchorEl);
 
     return (
         <>
@@ -34,7 +33,13 @@ export default function ModeSwitch() {
             >
                 {mode === 'light' ? <WbSunnyIcon /> : mode === 'dark' ? <Brightness2Icon /> : <LaptopIcon />}
             </Fab>
-            <Popper open={open} anchorEl={anchorEl} placement="left-start" disablePortal sx={{ zIndex: 2100 }}>
+            <Popper
+                open={Boolean(anchorEl)}
+                anchorEl={anchorEl}
+                placement="left-start"
+                disablePortal
+                sx={{ zIndex: 2100 }}
+            >
                 <Paper sx={{ p: 1, display: 'flex', gap: 1, alignItems: 'center', boxShadow: 4 }}>
                     <IconButton
                         color={mode === 'system' ? 'error' : 'default'}
