@@ -1,0 +1,17 @@
+[
+  {
+    "category": "Frontend",
+    "skills": [
+      { "name": "JavaScript", "level": "Expert", "icon": "javascript" },
+      { "name": "TypeScript", "level": "Advanced", "icon": "typescript" },
+      { "name": "React", "level": "Advanced", "icon": "react" },
+      { "name": "Material-UI", "level": "Advanced", "icon": "materialui" }
+    ]
+  },
+  {
+    "category": "Backend",
+    "skills": [
+      { "name": "Node.js", "level": "Advanced", "icon": "nodedotjs" }
+    ]
+  }
+]
