@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "pnpm run build && touch out/.nojekyll",
-    "deploy": "gh-pages -d out --dotfiles"
+    "deploy": "gh-pages -d out --dotfiles",
+    "debug": "NODE_OPTIONS='--inspect' next dev" 
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",

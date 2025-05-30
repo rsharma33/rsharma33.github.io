@@ -4,10 +4,8 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { lightTheme, darkTheme } from '@/themes/defaultTheme';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Preloader from '@/components/Preloader';
-import { Rubik, Roboto } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import Head from 'next/head';
 
 import './globals.css';

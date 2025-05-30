@@ -9,6 +9,12 @@ import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import certifications from '@/data/resume/certifications.json';
 
+type Certification = {
+  duration: string;
+  title: string;
+  institute: string;
+};
+
 export default function CertificationsSection() {
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
@@ -19,7 +25,7 @@ export default function CertificationsSection() {
         <TableContainer>
           <Table>
             <TableBody>
-              {certifications.map((row: any, idx: number) => (
+              {certifications.map((row: Certification, idx: number) => (
                 <TableRow key={idx}>
                   <TableCell>{row.duration} <strong>{row.title}</strong> from {row.institute}</TableCell>
                 </TableRow>
