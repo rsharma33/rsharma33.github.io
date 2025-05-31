@@ -2,7 +2,7 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import experienceData from '@/data/resume/experience.json';
+import experienceData from '@/config/data/experience.json';
 import {
   Timeline,
   TimelineItem,
@@ -50,7 +50,7 @@ export default function ExperienceSection() {
                 <Typography variant="subtitle2" color="text.secondary" sx={{ mb: 1 }}>
                   {exp.location} {exp.city ? `| ${exp.city}` : ''}
                 </Typography>
-                <Box sx={{ mt: 1 }}>
+                <Box sx={{ mt: 1 }} className="exp-description-list">
                   <span dangerouslySetInnerHTML={{ __html: exp.description }} />
                 </Box>
               </TimelineContent>

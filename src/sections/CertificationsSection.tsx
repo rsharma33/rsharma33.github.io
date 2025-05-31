@@ -7,7 +7,7 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
-import certifications from '@/data/resume/certifications.json';
+import certifications from '@/config/data/certifications.json';
 
 type Certification = {
   duration: string;

@@ -9,6 +9,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { lightTheme, darkTheme } from "@/themes/defaultTheme";
 import Preloader from "@/components/Preloader";
+import { GlobalStyle } from "@/styles/GlobalStyles";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -33,6 +34,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
     return (
         <ThemeProvider theme={appliedTheme}>
             <CssBaseline />
+            <GlobalStyle theme={appliedTheme} />
             {loading ? (
                 <Preloader />
             ) : isAuthPage ? (

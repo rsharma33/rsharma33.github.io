@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
-
 /* Remove the default before content/line from MUI Timeline items */
 .no-before::before {
-  display: none !important; 
+  display: none !important;
   content: none !important;
 }
 

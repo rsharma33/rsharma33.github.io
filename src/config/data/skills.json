@@ -1,0 +1,56 @@
+[
+  {
+    "category": "Frontend",
+    "skills": [
+      { "name": "JavaScript", "level": "Expert", "percent": 100, "icon": "javascript" },
+      { "name": "TypeScript", "level": "Advanced", "percent": 80, "icon": "typescript" },
+      { "name": "React", "level": "Advanced", "percent": 80, "icon": "react" },
+      { "name": "Material-UI", "level": "Advanced", "percent": 80, "icon": "materialui" },
+      { "name": "Redux", "level": "Advanced", "percent": 75, "icon": "redux" },
+      { "name": "HTML5", "level": "Expert", "percent": 95, "icon": "html5" },
+      { "name": "CSS3", "level": "Expert", "percent": 95, "icon": "css3" },
+      { "name": "Sass", "level": "Intermediate", "percent": 70, "icon": "sass" }
+    ]
+  },
+  {
+    "category": "Backend",
+    "skills": [
+      { "name": "Node.js", "level": "Advanced", "percent": 80, "icon": "nodedotjs" },
+      { "name": "Express.js", "level": "Advanced", "percent": 80, "icon": "express" },
+      { "name": "REST API", "level": "Advanced", "percent": 85, "icon": "api" },
+      { "name": "GraphQL", "level": "Intermediate", "percent": 60, "icon": "graphql" }
+    ]
+  },
+  {
+    "category": "DevOps",
+    "skills": [
+      { "name": "Docker", "level": "Intermediate", "percent": 65, "icon": "docker" },
+      { "name": "GitHub Actions", "level": "Intermediate", "percent": 60, "icon": "githubactions" },
+      { "name": "AWS", "level": "Beginner", "percent": 40, "icon": "aws" }
+    ]
+  },
+  {
+    "category": "Database",
+    "skills": [
+      { "name": "MongoDB", "level": "Advanced", "percent": 80, "icon": "mongodb" },
+      { "name": "PostgreSQL", "level": "Intermediate", "percent": 60, "icon": "postgresql" },
+      { "name": "MySQL", "level": "Intermediate", "percent": 60, "icon": "mysql" }
+    ]
+  },
+  {
+    "category": "Testing",
+    "skills": [
+      { "name": "Jest", "level": "Intermediate", "percent": 70, "icon": "jest" },
+      { "name": "React Testing Library", "level": "Intermediate", "percent": 65, "icon": "testinglibrary" },
+      { "name": "Cypress", "level": "Beginner", "percent": 40, "icon": "cypress" }
+    ]
+  },
+  {
+    "category": "Other",
+    "skills": [
+      { "name": "Git", "level": "Advanced", "percent": 85, "icon": "git" },
+      { "name": "Figma", "level": "Intermediate", "percent": 60, "icon": "figma" },
+      { "name": "Agile/Scrum", "level": "Intermediate", "percent": 65, "icon": "scrum" }
+    ]
+  }
+]

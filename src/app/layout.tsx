@@ -1,11 +1,10 @@
-'use client'
 import * as React from 'react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import { Roboto } from 'next/font/google';
+import { Roboto, Rubik } from 'next/font/google';
 import Head from 'next/head';
 
-import './globals.css';
-import ClientLayout from './ClientLayout';
+import './globals.scss';
+import ClientLayout from '../layouts/ClientLayout';
 import { AppProvider } from '@/context/AppContext';
 
 const roboto = Roboto({
@@ -14,13 +13,20 @@ const roboto = Roboto({
   display: 'swap',
 });
 
+const rubik = Rubik({
+  weight: ['300', '400', '500', '700', '900'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${roboto.className}`}>
+    <html lang="en" suppressHydrationWarning className={`${roboto.className} ${rubik.className}`}>
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/favicon.ico" />
+        <title>My App</title>
       </Head>
       <body>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>

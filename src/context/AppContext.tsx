@@ -9,7 +9,7 @@ interface AppContextType {
   // Add more global state here as needed
 }
 
-const AppContext = createContext<AppContextType | undefined>(undefined);
+export const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const useAppContext = () => {
   const context = useContext(AppContext);

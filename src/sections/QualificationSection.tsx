@@ -8,7 +8,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import qualifications from '@/data/resume/qualification.json'; // Adjust the import path as necessary
+import qualifications from '@/config/data/qualification.json'; // Adjust the import path as necessary
 
 export default function QualificationSection() {
 
