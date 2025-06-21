@@ -1,7 +1,7 @@
 {
-  "name": "rsharma33",
+  "name": "rsharma33.github.io",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://rsharma33.github.io/rsharma33.github.io",
   "scripts": {
     "dev": "next dev --turbopack",
