@@ -37,7 +37,14 @@ export default function SkillsSection() {
         <Divider sx={{ mb: 4, borderColor: '#e7dcd6' }} />
         <Grid container spacing={4}>
         {categories.map((cat) => (
-          <Grid item xs={12} md={3} key={cat.category}>
+          <Box 
+        key={cat.category}
+        sx={{ 
+          flexBasis: { xs: '100%', md: '25%' },
+          maxWidth: { xs: '100%', md: '25%' },
+          padding: 2
+        }}
+      >
           <Typography
             variant="h5"
             sx={{
@@ -98,7 +105,7 @@ export default function SkillsSection() {
             </Box>
             </Box>
           ))}
-          </Grid>
+          </Box>
         ))}
         </Grid>
       </Box>

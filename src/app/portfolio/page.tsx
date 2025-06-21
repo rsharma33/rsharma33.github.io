@@ -1,8 +1,6 @@
 'use client'
 import * as React from 'react';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
+import { Grid, Typography, Box, Card, Tabs, Tab, Chip } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
@@ -13,10 +11,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import Grid from '@mui/material/Grid';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Chip from '@mui/material/Chip';
 import Image from 'next/image';
 import projectsData from '@/config/data/projects.json';
 import { getClassByThemeMode } from '@/utils/utils';
@@ -80,7 +74,12 @@ export default function ProjectsSection() {
         </Tabs>
         <Grid container spacing={3}>
           {filteredProjects.map((project, idx) => (
-            <Grid item xs={12} sm={6} md={3} key={idx} sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Box key={idx}
+                sx={{ 
+                  flexBasis: { xs: '100%', sm: '50%', md: '25%' },
+                  padding: 1.5,
+                  display: 'flex',
+                  justifyContent: 'center'}}>
               <Card sx={{ width: '100%', maxWidth: 340, height: '100%', display: 'flex', flexDirection: 'column', boxShadow: 3, borderRadius: 0 }} className={getClassByThemeMode('darkBG', 'lightBG')}>
                 {project.imageSmall && (
                   <Box sx={{ position: 'relative', width: '100%', height: 160 }}>
@@ -113,7 +112,7 @@ export default function ProjectsSection() {
                   </Button>
                 </CardActions>
               </Card>
-            </Grid>
+            </Box>
           ))}
         </Grid>
         <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>

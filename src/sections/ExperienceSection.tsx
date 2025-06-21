@@ -32,7 +32,10 @@ export default function ExperienceSection() {
 
         <Timeline position='right' sx={{ mt: 2, mb: 4 }}>
           {experience.map((exp, idx) => (
-              <TimelineItem key={idx} className={idx === 0 ? 'no-before' : undefined}>
+              <TimelineItem
+                key={idx}
+                sx={idx === 0 ? { '&:before': { display: 'none' } } : undefined}
+              >
               <TimelineOppositeContent sx={{ flex: 0.18, minWidth: 100, color: 'text.secondary', pt: 3 }}>
                 <Typography variant="caption">{exp.tenure}</Typography>
               </TimelineOppositeContent>

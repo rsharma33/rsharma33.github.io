@@ -3,7 +3,7 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid'; // Ensure direct import
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
@@ -16,17 +16,27 @@ export default function AboutSection() {
   return (
     <Box component="section" id="about-section" sx={{ py: { xs: 2, md: 4 } }} className={getClassByThemeMode('section-wrapper darkBG', 'section-wrapper lightBG')}>
       <Container sx={{ mt: 4, mb: 4 }}>
-        <Grid
-          container
-          spacing={3}
-          alignItems="center"
-          justifyContent="center"
-          direction={{ xs: 'column', md: 'row' }}
-          wrap="nowrap"
-          sx={{ color: 'inherit' }}
+        <Box
+          sx={{ 
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 3,
+            color: 'inherit'
+          }}
         >
           {/* Left: Image + Badge */}
-          <Grid item xs={12} sx={{ flexBasis: { md: 340 }, flexGrow: 0, flexShrink: 0, maxWidth: { md: 340 }, minWidth: { md: 300 }, display: 'flex', justifyContent: 'center', position: 'relative' }}>
+          <Box sx={{ 
+            flexBasis: { md: 340 }, 
+            flexGrow: 0, 
+            flexShrink: 0, 
+            maxWidth: { md: 340 }, 
+            minWidth: { md: 300 }, 
+            display: 'flex', 
+            justifyContent: 'center', 
+            position: 'relative' 
+          }}>
             <Box sx={{ position: 'relative', width: 'auto', height: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Box sx={{ position: 'absolute', width: 350, height: 350, borderRadius: '50%', backgroundColor: getClassByThemeMode('grey.900', 'white'), left: 0, top: 30, zIndex: 1 }} />
               <Image
@@ -49,9 +59,12 @@ export default function AboutSection() {
                 </Box>
               </Card>
             </Box>
-          </Grid>
+          </Box>
           {/* Center: Headline, Description, Button */}
-          <Grid item xs={12} md={6} sx={{ minWidth: 0 }}>
+          <Box sx={{ 
+            flexBasis: { md: '50%' }, 
+            minWidth: 0 
+          }}>
             <Typography variant="h3" component="h2" fontWeight={700} mb={2}>
               <Box component="span" color="inherit" fontWeight={900}>Over </Box>
               <Box component="span" color="error.main" fontWeight={900}>twenty five<br />years of designing.</Box>
@@ -69,9 +82,16 @@ export default function AboutSection() {
             >
               DOWNLOAD RESUME
             </Button>
-          </Grid>
+          </Box>
           {/* Right: Stats Card */}
-          <Grid item xs={12} sx={{ color: getClassByThemeMode('white', 'black'), flexBasis: { md: 260 }, flexGrow: 0, flexShrink: 0, maxWidth: { md: 260 }, minWidth: { md: 220 } }} >
+          <Box sx={{ 
+            color: getClassByThemeMode('white', 'black'), 
+            flexBasis: { md: 260 }, 
+            flexGrow: 0, 
+            flexShrink: 0, 
+            maxWidth: { md: 260 }, 
+            minWidth: { md: 220 }
+          }}>
             <Card sx={{ backgroundColor: getClassByThemeMode('grey.900', 'white'), color: 'inherit', p: 4, borderRadius: 0, minHeight: 320, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
               <Box textAlign="center" mb={4}>
                 <Typography variant="h4" fontWeight={700}>14+</Typography>
@@ -88,8 +108,8 @@ export default function AboutSection() {
                 <Typography variant="subtitle2" sx={{ opacity: 0.8 }}>Jobs done</Typography>
               </Box>
             </Card>
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
       </Container>
     </Box>
   );
