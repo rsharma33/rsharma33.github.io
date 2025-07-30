@@ -12,14 +12,13 @@ const appConfig = {
     { label: "Twitter", url: "https://twitter.com/rsharma33" } 
   ],
   sections: {
-    hero: true,
-    about: true,
-    experience: true,
-    skills: true,
-    projects: true,
-    certifications: true,
-    qualification: true,
-    contact: true
+    heroSection: true,
+    aboutSection: true,
+    experienceSection: true,
+    skillsSection: true,
+    projectsSection: true,
+    certificationSection: false,
+    qualificationSection: false
   },
   theme: {
     defaultMode:  "light", // 'light', 'dark', or 'system'

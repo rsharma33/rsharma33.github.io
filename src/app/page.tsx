@@ -1,24 +1,26 @@
 import * as React from 'react';
 
-// Importing section components
-import ExperienceSection from '../sections/ExperienceSection';
-import SkillsSection from '../sections/SkillsSection';
-import ProjectsSection from '../sections/ProjectsSection';
-import AboutSection from '../sections/AboutSection';
-// import QualificationSection from '../sections/QualificationSection';
-import CertificationsSection from '../sections/CertificationsSection';
-import HeroSection from '../sections/HeroSection';
+import { appConfig } from '@/config/AppConfig';
+import ExperienceSection from '../sections/ExperienceSection/ExperienceSection';
+import SkillsSection from '../sections/SkillsSection/SkillsSection';
+import ProjectsSection from '../sections/ProjectsSection/ProjectsSection';
+import AboutSection from '../sections/AboutSection/AboutSection';
+import QualificationSection from '../sections/QualificationSection/QualificationSection';
+import CertificationsSection from '../sections/CertificationsSection/CertificationsSection';
+import HeroSection from '../sections/HeroSection/HeroSection';
 
 export default function Home() {
+  const { heroSection, aboutSection, skillsSection, experienceSection, projectsSection, certificationSection, qualificationSection, contactSection } = appConfig.sections;
+
   return (
     <>
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ExperienceSection />
-      {/* <QualificationSection /> */}
-      <CertificationsSection />      
-      <ProjectsSection />
+      { heroSection && <HeroSection />}
+      { aboutSection && <AboutSection />}
+      { skillsSection && <SkillsSection />}
+      { experienceSection && <ExperienceSection />}
+      { qualificationSection && <QualificationSection />}
+      { certificationSection && <CertificationsSection />}
+      { projectsSection && <ProjectsSection />}
     </>
   );
 }

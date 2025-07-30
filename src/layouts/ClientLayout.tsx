@@ -5,11 +5,10 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { usePathname } from "next/navigation";
 import { useAppContext } from "@/context/AppContext";
-import { ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
-import { lightTheme, darkTheme } from "@/themes/defaultTheme";
+import { getAppliedTheme } from "@/utils/utils";
 import Preloader from "@/components/Preloader";
-import { GlobalStyle } from "@/styles/styles";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -22,19 +21,12 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
     }, []);
 
     // Determine theme
-    let appliedTheme = lightTheme;
-    if (mode === 'dark') appliedTheme = darkTheme;
-    if (mode === 'system' && typeof window !== 'undefined') {
-        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        appliedTheme = isDark ? darkTheme : lightTheme;
-    }
-
+    const appliedTheme = getAppliedTheme(mode);
     const isAuthPage = pathname === "/auth/signin";
 
     return (
         <ThemeProvider theme={appliedTheme}>
             <CssBaseline />
-            <GlobalStyle theme={appliedTheme} />
             {loading ? (
                 <Preloader />
             ) : isAuthPage ? (

@@ -34,6 +34,14 @@ const socialLinks = [
   // { icon: <TwitterIcon />, url: 'https://twitter.com/rsharma33', label: 'Twitter' },
 ];
 
+const logoStyle = {
+  fontWeight: 700,
+  fontSize: '1.5rem',
+  color: 'text.primary',
+  textDecoration: 'none',
+  fontFamily: 'Rubik, sans-serif',
+};
+
 export default function Header() {
   // Smooth scroll handler
   const handleScroll = (id: string) => (e: React.MouseEvent) => {
@@ -127,13 +135,9 @@ export default function Header() {
           <Box sx={{ flex: '0 0 auto', display: 'flex', alignItems: 'center', minWidth: 120 }}>
             <Typography
               variant="h6"
-              sx={{
-                fontWeight: 700,
-                letterSpacing: 1,
-                fontFamily: 'Rubik, sans-serif',
-              }}
+              sx={logoStyle}
             >
-              UI Coder
+              UI Coder 
             </Typography>
           </Box>
           {/* Hamburger for mobile */}

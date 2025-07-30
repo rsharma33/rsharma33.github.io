@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { appConfig } from '../config/AppConfig';
 import { AppContext } from '@/context/AppContext';
+import { lightTheme, darkTheme } from '@/themes/defaultTheme';
 
 /**
  * Utility functions for global use.
@@ -55,4 +56,19 @@ export function getClassByThemeMode(
     }
 
     return currentTheme === 'dark' ? classForDarkMode : classForLightMode;
+}
+
+/**
+ * Returns the appropriate theme object based on the mode.
+ * @param mode - The theme mode ('light', 'dark', or 'system')
+ * @returns The theme object (lightTheme or darkTheme)
+ */
+export function getAppliedTheme(mode: 'light' | 'dark' | 'system') {
+  if (mode === 'dark') return darkTheme;
+  if (mode === 'light') return lightTheme;
+  if (mode === 'system' && typeof window !== 'undefined') {
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return isDark ? darkTheme : lightTheme;
+  }
+  return lightTheme;
 }

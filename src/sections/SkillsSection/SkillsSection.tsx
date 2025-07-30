@@ -1,4 +1,5 @@
 'use client';
+
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -7,13 +8,14 @@ import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import skillsData from '@/config/data/skills.json';
 
-import { SkillsSectionStyles as skillsCss } from '@/styles/styles'; // Adjust the import path as necessary
+import { SkillsSectionStyles as skillsCss } from './SkillsSection.styled'; // Adjust the import path as necessary
+import { SectionWrapper } from '@/styles/styles';
 
 export default function SkillsSection() {
   const categories = skillsData as Array<{ category: string; skills: Array<{ name: string; percent: number }> }>;
 
   return (
-    <Box component="section" id="skills-section" className={'section-wrapper'} sx={skillsCss.section}>
+    <SectionWrapper id="skills-section" className={'section-wrapper'}>
       <Container maxWidth="lg" sx={skillsCss.container}>
         <Box id="skills">
           <Typography
@@ -51,6 +53,6 @@ export default function SkillsSection() {
           </Grid>
         </Box>
       </Container>
-    </Box>
+    </SectionWrapper>
   );
 }

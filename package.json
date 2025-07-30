@@ -10,7 +10,7 @@
     "lint": "next lint",
     "predeploy": "pnpm run build && touch out/.nojekyll",
     "deploy": "gh-pages -d out --dotfiles",
-    "debug": "NODE_OPTIONS='--inspect' next dev" 
+    "debug": "NODE_OPTIONS='--inspect' next dev"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -26,8 +26,7 @@
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0",
-    "styled-components": "^6.1.18"
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

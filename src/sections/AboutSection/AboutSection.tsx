@@ -9,6 +9,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import StarIcon from '@mui/icons-material/Star';
 import Image from 'next/image';
 import { getClassByThemeMode } from '@/utils/utils';
+import { BTN } from '@/styles/styles';
 
 export default function AboutSection() {
   return (
@@ -69,13 +70,7 @@ export default function AboutSection() {
             <Typography variant="body1" color="inherit" mb={2}>
               I'm a FullStack Developer, specializing in Frontend development. I have extensive experience with web technologies including Node, Express, Webpack, TypeScript, React, Redux, Tailwind, SASS and Bootstrap, and a strong focus on cross-browser compatibility and performance tuning.
             </Typography>
-            <Button
-              variant="outlined"
-              color="error"
-              size="large"
-              endIcon={<DownloadIcon />}
-              sx={{ fontWeight: 700, px: 4, py: 1.5, borderWidth: 2, borderRadius: 0 }}
-            >
+            <Button variant="outlined" color="error" size="large" endIcon={<DownloadIcon />} sx={{ ...BTN }}>
               DOWNLOAD RESUME
             </Button>
           </Box>
