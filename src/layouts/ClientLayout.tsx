@@ -9,7 +9,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { lightTheme, darkTheme } from "@/themes/defaultTheme";
 import Preloader from "@/components/Preloader";
-import { GlobalStyle } from "@/styles/GlobalStyles";
+import { GlobalStyle } from "@/styles/styles";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();

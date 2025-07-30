@@ -10,23 +10,10 @@ import projectsData from '@/config/data/projects.json';
 import Link from 'next/link';
 import { Button } from '@mui/material';
 import { getClassByThemeMode } from '@/utils/utils';
-
-type Project = {
-  Project?: string;
-  title?: string;
-  imageSmall?: string;
-  imageLarge?: string;
-};
+import { Project } from '@/types';
+import { masonryHeights } from '@/config/AppConfig';
 
 const projects: Project[] = (projectsData as any[]).slice(0, 6);
-
-// Predefined heights to mimic the provided masonry structure
-const masonryHeights = [
-  340,
-  200,
-  280,
-  450
-];
 
 export default function ProjectsSection() {
   return (

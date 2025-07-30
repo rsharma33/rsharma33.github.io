@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import experienceData from '@/config/data/experience.json';
+import { Experience } from '@/types';
 import {
   Timeline,
   TimelineItem,
@@ -13,14 +14,7 @@ import {
   TimelineOppositeContent,
 } from '@mui/lab';
 
-const experience: Array<{
-  company: string;
-  location: string;
-  city: string;
-  designation: string;
-  tenure: string;
-  description: string;
-}> = experienceData as any;
+const experience = experienceData as Experience[];
 
 export default function ExperienceSection() {
   return (
@@ -31,7 +25,7 @@ export default function ExperienceSection() {
         </Typography>
 
         <Timeline position='right' sx={{ mt: 2, mb: 4 }}>
-          {experience.map((exp, idx) => (
+          {experience.map((exp: Experience, idx) => (
               <TimelineItem
                 key={idx}
                 sx={idx === 0 ? { '&:before': { display: 'none' } } : undefined}

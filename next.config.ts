@@ -8,8 +8,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization for static export
   },
-  assetPrefix: isProd ? "/rsharma33.github.io/" : "",
-  basePath: isProd ? "/rsharma33.github.io" : "",
+  assetPrefix: isProd ? "/raajeshsharma.github.io/" : "",
+  basePath: isProd ? "/raajeshsharma.github.io" : "",
 };
 
 export default nextConfig;

@@ -4,12 +4,12 @@ const appConfig = {
   location: "Phoenix, Arizona, USA",
   email: "rajesh@example.com",
   phone: "+1-555-123-4567",
-  website: "https://yourportfolio.com",
+  website: "https://raajeshsharma.github.io",
   summary: "Experienced FullStack Developer and UI/UX Designer with 16+ years in web and app design, passionate about building modern, user-centric digital products.",
   social: [
-    { label: "GitHub", url: "https://github.com/rsharma33" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/rsharma33" },
-    { label: "Twitter", url: "https://twitter.com/rsharma33" }
+    { label: "GitHub", url: "https://github.com/raajeshsharma" },
+    { label: "LinkedIn", url: "https://linkedin.com/in/raajeshsharma" },
+    { label: "Twitter", url: "https://twitter.com/rsharma33" } 
   ],
   sections: {
     hero: true,
@@ -29,4 +29,12 @@ const appConfig = {
   }
 };
 
-export { appConfig };
+// Predefined heights to mimic the provided masonry structure
+const masonryHeights = [
+  340,
+  200,
+  280,
+  450
+];
+
+export { appConfig, masonryHeights };

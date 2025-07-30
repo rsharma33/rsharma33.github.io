@@ -29,8 +29,8 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: <GitHubIcon />, url: 'https://github.com/rsharma33', label: 'GitHub' },
-  { icon: <LinkedInIcon />, url: 'https://linkedin.com/in/rsharma33', label: 'LinkedIn' },
+  { icon: <GitHubIcon />, url: 'https://github.com/raajeshsharma', label: 'GitHub' },
+  { icon: <LinkedInIcon />, url: 'https://linkedin.com/in/raajeshsharma', label: 'LinkedIn' },
   // { icon: <TwitterIcon />, url: 'https://twitter.com/rsharma33', label: 'Twitter' },
 ];
 

@@ -1,8 +1,8 @@
 {
-  "name": "rsharma33.github.io",
+  "name": "raajeshsharma",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "https://rsharma33.github.io/rsharma33.github.io",
+  "private": true,
+  "homepage": "https://raajeshsharma.github.io/raajeshsharma.github.io",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -10,13 +10,14 @@
     "lint": "next lint",
     "predeploy": "pnpm run build && touch out/.nojekyll",
     "deploy": "gh-pages -d out --dotfiles",
-    "debug": "set NODE_OPTIONS='--inspect' && next dev"
+    "debug": "NODE_OPTIONS='--inspect' next dev" 
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.2.5",
     "@mui/icons-material": "^7.1.0",
     "@mui/lab": "7.0.0-beta.12",
     "@mui/material": "^7.1.0",
@@ -37,7 +38,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "gh-pages": "^6.3.0",
-    "sass": "^1.89.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -8,12 +8,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import certifications from '@/config/data/certifications.json';
-
-type Certification = {
-  duration: string;
-  title: string;
-  institute: string;
-};
+import { Certification } from '@/types';
 
 export default function CertificationsSection() {
   return (

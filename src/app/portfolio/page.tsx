@@ -72,11 +72,11 @@ export default function ProjectsSection() {
             <Tab key={cat} label={cat} />
           ))}
         </Tabs>
-        <Grid container spacing={3}>
+        <Grid container spacing={0}>
           {filteredProjects.map((project, idx) => (
             <Box key={idx}
                 sx={{ 
-                  flexBasis: { xs: '100%', sm: '50%', md: '25%' },
+                  flexBasis: { xs: '100%', sm: '50%', md: '31%' },
                   padding: 1.5,
                   display: 'flex',
                   justifyContent: 'center'}}>
