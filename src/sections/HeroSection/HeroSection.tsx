@@ -2,18 +2,9 @@
 
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import { HeroBox, HeroSectionStyles as heroCss, HeroImageWrapper } from '@/sections/HeroSection/HeroSection.styled';
+import { HeroBox, HeroSectionStyles as heroCss, HeroImageWrapper, heroImgStyle } from '@/sections/HeroSection/HeroSection.styled';
 import { SectionWrapper, BTN } from '@/styles/styles';
 import { Button, Stack, Container, Typography } from '@mui/material';
-
-const heroImgStyle: React.CSSProperties = {
-  width: '534px',
-  height: '560px',
-  borderRadius: '15px',
-  objectFit: 'cover',
-  filter: 'white',
-  display: 'block',
-};
 
 const HeroSection: React.FC = () => {
   return (
@@ -30,17 +21,13 @@ const HeroSection: React.FC = () => {
             A FullStack Developer with 18+ years of experience and passionate about building scalable web applications.
           </Typography>
 
-            <Stack
-            spacing={2}
-            direction={{ xs: 'column', sm: 'row' }}
-            sx={{ mt: 3 }}
-            >
-            <Button variant="contained" color="error" size="large" href="#contact" sx={{ ...BTN }}>
-              HAVING A PROJECT?
-            </Button>
-            <Button variant="outlined" color="inherit" size="large" href="#works" sx={{ ...BTN }}>
-              MY WORKS
-            </Button>
+            <Stack spacing={2} direction={{ xs: 'column', sm: 'row' }} sx={{ mt: 3 }}>
+              <Button variant="contained" color="error" size="large" href="#contact" sx={{ ...BTN }}>
+                HAVING A PROJECT?
+              </Button>
+              <Button variant="outlined" color="inherit" size="large" href="#works" sx={{ ...BTN }}>
+                MY WORKS
+              </Button>
             </Stack>
         </Box>
         

@@ -53,4 +53,13 @@ const HeroImageWrapper = styled('div')(({ theme }) => ({
   boxShadow: theme.shadows[4],
 }));
 
-export { HeroBox, HeroSectionStyles, HeroImageWrapper };
+const heroImgStyle: React.CSSProperties = {
+  width: '534px',
+  height: '560px',
+  borderRadius: '15px',
+  objectFit: 'cover',
+  filter: 'white',
+  display: 'block',
+};
+
+export { HeroBox, HeroSectionStyles, HeroImageWrapper, heroImgStyle };

@@ -1,4 +1,5 @@
 import { styled } from '@mui/material';
+import { preload } from 'react-dom';
 
 const BTN = {
     fontSize: { xs: '1rem', md: '1.1rem' },
