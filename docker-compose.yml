@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  web:
+    container_name: Rajesh_Portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    expose:
+      - 3000
+    networks:
+      - web_bridge
+    environment:
+      - NODE_ENV=development
+    command: pnpm run dev
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+networks:
+  web_bridge:
+    external: true
