@@ -1,17 +1,31 @@
 [
   {
-    "duration": "3 months",
-    "title": "Certificate course in Computer Hardware & Troubleshooting",
-    "institute": "Sterlite Foundation"
+    "title": "Developing Applications with Google Cloud Platform",
+    "institute": "Coursera",
+    "issued": "Jul 2019",
+    "credentialId": "2U47VJ8FVYE3",
+    "url": "https://www.coursera.org/account/accomplishments/specialization/2U47VJ8FVYE3"
   },
   {
-    "duration": "6 months",
-    "title": "Certificate course in Information Technology",
-    "institute": "CDAC"
+    "title": "Google Cloud Platform Fundamentals: Core Infrastructure",
+    "institute": "Coursera",
+    "issued": "Jul 2019",
+    "credentialId": "UR5T3QTAASU8",
+    "url": "https://www.coursera.org/account/accomplishments/verify/UR5T3QTAASU8"
   },
   {
-    "duration": "3 months",
     "title": "Certificate course in Core Java",
-    "institute": "Oceanic"
+    "institute": "Oceanic",
+    "duration": "3 months"
+  },
+  {
+    "title": "Certificate course in Information Technology",
+    "institute": "CDAC",
+    "duration": "6 months"
+  },
+  {
+    "title": "Certificate course in Computer Hardware & Troubleshooting",
+    "institute": "Sterlite Foundation",
+    "duration": "3 months"
   }
 ]
