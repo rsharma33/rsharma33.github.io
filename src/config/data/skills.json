@@ -1,56 +1,73 @@
 [
   {
+    "category": "Languages",
+    "skills": [
+      { "name": "JavaScript", "level": "Expert", "icon": "javascript" },
+      { "name": "TypeScript", "level": "Advanced", "icon": "typescript" },
+      { "name": "Python", "level": "Intermediate", "icon": "python" },
+      { "name": "Java", "level": "Intermediate", "icon": "java" },
+      { "name": "PHP", "level": "Intermediate", "icon": "php" }
+    ]
+  },
+  {
     "category": "Frontend",
     "skills": [
-      { "name": "JavaScript", "level": "Expert", "percent": 100, "icon": "javascript" },
-      { "name": "TypeScript", "level": "Advanced", "percent": 80, "icon": "typescript" },
-      { "name": "React", "level": "Advanced", "percent": 80, "icon": "react" },
-      { "name": "Material-UI", "level": "Advanced", "percent": 80, "icon": "materialui" },
-      { "name": "Redux", "level": "Advanced", "percent": 75, "icon": "redux" },
-      { "name": "HTML5", "level": "Expert", "percent": 95, "icon": "html5" },
-      { "name": "CSS3", "level": "Expert", "percent": 95, "icon": "css3" },
-      { "name": "Sass", "level": "Intermediate", "percent": 70, "icon": "sass" }
+      { "name": "React", "level": "Expert", "icon": "react" },
+      { "name": "Next.js", "level": "Advanced", "icon": "nextdotjs" },
+      { "name": "Redux", "level": "Advanced", "icon": "redux" },
+      { "name": "HTML5", "level": "Expert", "icon": "html5" },
+      { "name": "CSS3", "level": "Expert", "icon": "css3" },
+      { "name": "SASS", "level": "Expert", "icon": "sass" },
+      { "name": "Tailwind CSS", "level": "Advanced", "icon": "tailwindcss" },
+      { "name": "Bootstrap", "level": "Advanced", "icon": "bootstrap" },
+      { "name": "Material UI", "level": "Advanced", "icon": "mui" },
+      { "name": "Webpack", "level": "Advanced", "icon": "webpack" }
     ]
   },
   {
     "category": "Backend",
     "skills": [
-      { "name": "Node.js", "level": "Advanced", "percent": 80, "icon": "nodedotjs" },
-      { "name": "Express.js", "level": "Advanced", "percent": 80, "icon": "express" },
-      { "name": "REST API", "level": "Advanced", "percent": 85, "icon": "api" },
-      { "name": "GraphQL", "level": "Intermediate", "percent": 60, "icon": "graphql" }
+      { "name": "Node.js", "level": "Advanced", "icon": "nodedotjs" },
+      { "name": "Express.js", "level": "Advanced", "icon": "express" },
+      { "name": "Microservices", "level": "Advanced", "icon": "microservices" },
+      { "name": "REST APIs", "level": "Expert", "icon": "api" }
     ]
   },
   {
-    "category": "DevOps",
+    "category": "Cloud & DevOps",
     "skills": [
-      { "name": "Docker", "level": "Intermediate", "percent": 65, "icon": "docker" },
-      { "name": "GitHub Actions", "level": "Intermediate", "percent": 60, "icon": "githubactions" },
-      { "name": "AWS", "level": "Beginner", "percent": 40, "icon": "aws" }
+      { "name": "Azure", "level": "Advanced", "icon": "azure" },
+      { "name": "Google Cloud", "level": "Intermediate", "icon": "gcp" },
+      { "name": "Terraform", "level": "Intermediate", "icon": "terraform" },
+      { "name": "Docker", "level": "Intermediate", "icon": "docker" },
+      { "name": "GitHub Actions", "level": "Advanced", "icon": "githubactions" },
+      { "name": "Git", "level": "Expert", "icon": "git" }
     ]
   },
   {
-    "category": "Database",
+    "category": "Databases",
     "skills": [
-      { "name": "MongoDB", "level": "Advanced", "percent": 80, "icon": "mongodb" },
-      { "name": "PostgreSQL", "level": "Intermediate", "percent": 60, "icon": "postgresql" },
-      { "name": "MySQL", "level": "Intermediate", "percent": 60, "icon": "mysql" }
+      { "name": "MongoDB", "level": "Advanced", "icon": "mongodb" },
+      { "name": "MySQL", "level": "Advanced", "icon": "mysql" },
+      { "name": "SQLite", "level": "Intermediate", "icon": "sqlite" }
     ]
   },
   {
-    "category": "Testing",
+    "category": "Platforms",
     "skills": [
-      { "name": "Jest", "level": "Intermediate", "percent": 70, "icon": "jest" },
-      { "name": "React Testing Library", "level": "Intermediate", "percent": 65, "icon": "testinglibrary" },
-      { "name": "Cypress", "level": "Beginner", "percent": 40, "icon": "cypress" }
+      { "name": "Salesforce Commerce Cloud", "level": "Advanced", "icon": "salesforce" },
+      { "name": "Adobe Experience Manager", "level": "Intermediate", "icon": "adobe" },
+      { "name": "Magento", "level": "Intermediate", "icon": "magento" },
+      { "name": "WordPress", "level": "Advanced", "icon": "wordpress" }
     ]
   },
   {
-    "category": "Other",
+    "category": "Design",
     "skills": [
-      { "name": "Git", "level": "Advanced", "percent": 85, "icon": "git" },
-      { "name": "Figma", "level": "Intermediate", "percent": 60, "icon": "figma" },
-      { "name": "Agile/Scrum", "level": "Intermediate", "percent": 65, "icon": "scrum" }
+      { "name": "Photoshop", "level": "Advanced", "icon": "photoshop" },
+      { "name": "Adobe XD", "level": "Advanced", "icon": "adobexd" },
+      { "name": "Illustrator", "level": "Intermediate", "icon": "illustrator" },
+      { "name": "Adobe Animate", "level": "Advanced", "icon": "adobe" }
     ]
   }
 ]
