@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "This site — a statically exported Next.js 15 portfolio built with Material UI, a data-driven resume layer and a Gemini-powered assistant.",
+    "url": "https://github.com/raajeshsharma/raajeshsharma.github.io",
+    "demo": "https://raajeshsharma.github.io",
+    "tags": ["Next.js", "TypeScript", "Material UI", "Gemini API"],
+    "fork": false
+  },
+  {
+    "title": "Node CRUD Starter with SQLite",
+    "description": "A minimal starter template for building CRUD services on Node.js backed by SQLite — useful as a scaffold for small APIs and prototypes.",
+    "url": "https://github.com/raajeshsharma/starter-node-crud-sqlite",
+    "tags": ["Node.js", "Express", "SQLite", "JavaScript"],
+    "fork": false
+  },
+  {
+    "title": "Reusable Shell Scripts",
+    "description": "A collection of reusable shell and bash scripts for day-to-day development and environment setup automation.",
+    "url": "https://github.com/raajeshsharma/scripts",
+    "tags": ["Shell", "Bash", "Automation"],
+    "fork": false
+  },
+  {
+    "title": "Raspberry Pi Experiments",
+    "description": "Hands-on Raspberry Pi projects exploring IoT sensors, wiring and small self-hosted services.",
+    "url": "https://github.com/raajeshsharma/practice-raspberrypi",
+    "tags": ["Raspberry Pi", "IoT", "Python"],
+    "fork": false
+  },
+  {
+    "title": "Node/Express REST API Example",
+    "description": "A basic Node.js and Express REST API implementation example covering routing, middleware and controller structure.",
+    "url": "https://github.com/raajeshsharma/node-express-rest-api-example",
+    "tags": ["Node.js", "Express", "REST"],
+    "fork": true
+  },
+  {
+    "title": "ws-scrcpy",
+    "description": "Web client prototype for scrcpy — stream and control an Android device straight from the browser over WebSockets.",
+    "url": "https://github.com/raajeshsharma/ws-scrcpy",
+    "tags": ["TypeScript", "WebSockets", "Android"],
+    "fork": true
+  }
+]

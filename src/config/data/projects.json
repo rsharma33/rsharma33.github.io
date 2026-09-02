@@ -3,207 +3,264 @@
     "title": "Personal Portfolio Website",
     "description": "A modern portfolio website built with Next.js and Material-UI.",
     "url": "https://yourportfolio.com",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
     "tag": "web",
-    "techStack": ["Next.js", "Material-UI", "React", "TypeScript"]
-    },
-    {
+    "techStack": [
+      "Next.js",
+      "Material-UI",
+      "React",
+      "TypeScript"
+    ],
+    "showOnHome": true
+  },
+  {
     "title": "Task Manager App",
     "description": "A full-stack task management application using React and Node.js.",
-    "url": "https://github.com/yourusername/task-manager",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/task-manager",
     "tag": "app",
-    "techStack": ["React", "Node.js", "Express", "MongoDB"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "showOnHome": true
+  },
+  {
     "title": "E-Commerce Platform",
     "description": "A scalable e-commerce platform with payment integration and admin dashboard.",
-    "url": "https://github.com/yourusername/ecommerce-platform",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/ecommerce-platform",
     "tag": "web",
-    "techStack": ["React", "Redux", "Node.js", "Stripe", "MongoDB"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Redux",
+      "Node.js",
+      "Stripe",
+      "MongoDB"
+    ],
+    "showOnHome": true
+  },
+  {
     "title": "Blog CMS",
     "description": "A content management system for blogging with markdown support.",
-    "url": "https://github.com/yourusername/blog-cms",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/blog-cms",
     "tag": "web",
-    "techStack": ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS"]
-    },
-    {
+    "techStack": [
+      "Next.js",
+      "Prisma",
+      "PostgreSQL",
+      "TailwindCSS"
+    ]
+  },
+  {
     "title": "Weather Dashboard",
     "description": "A weather dashboard app using OpenWeatherMap API.",
-    "url": "https://github.com/yourusername/weather-dashboard",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/weather-dashboard",
     "tag": "utility",
-    "techStack": ["React", "API Integration", "Chart.js"]
-    },
-    {
+    "techStack": [
+      "React",
+      "API Integration",
+      "Chart.js"
+    ],
+    "showOnHome": true
+  },
+  {
     "title": "Chat Application",
     "description": "A real-time chat application with WebSocket support.",
-    "url": "https://github.com/yourusername/chat-app",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/chat-app",
     "tag": "app",
-    "techStack": ["React", "Socket.io", "Node.js", "Express"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Socket.io",
+      "Node.js",
+      "Express"
+    ],
+    "showOnHome": true
+  },
+  {
     "title": "Fitness Tracker",
     "description": "A fitness tracking app with workout logging and analytics.",
-    "url": "https://github.com/yourusername/fitness-tracker",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/fitness-tracker",
     "tag": "app",
-    "techStack": ["React Native", "Redux", "Firebase"]
-    },
-    {
+    "techStack": [
+      "React Native",
+      "Redux",
+      "Firebase"
+    ]
+  },
+  {
     "title": "Recipe Finder",
     "description": "A recipe search app using Edamam API with favorites and shopping list.",
-    "url": "https://github.com/yourusername/recipe-finder",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/recipe-finder",
     "tag": "web",
-    "techStack": ["Vue.js", "Vuetify", "API Integration"]
-    },
-    {
+    "techStack": [
+      "Vue.js",
+      "Vuetify",
+      "API Integration"
+    ]
+  },
+  {
     "title": "Expense Tracker",
     "description": "A personal finance and expense tracking web app.",
-    "url": "https://github.com/yourusername/expense-tracker",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/expense-tracker",
     "tag": "utility",
-    "techStack": ["Angular", "TypeScript", "Firebase"]
-    },
-    {
+    "techStack": [
+      "Angular",
+      "TypeScript",
+      "Firebase"
+    ],
+    "showOnHome": true
+  },
+  {
     "title": "Portfolio Gallery",
     "description": "A gallery to showcase photography and design work.",
-    "url": "https://github.com/yourusername/portfolio-gallery",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/portfolio-gallery",
     "tag": "web",
-    "techStack": ["React", "Styled-Components", "Cloudinary"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Styled-Components",
+      "Cloudinary"
+    ]
+  },
+  {
     "title": "Online Quiz App",
     "description": "A quiz application with timer, scoring, and leaderboard.",
-    "url": "https://github.com/yourusername/quiz-app",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/quiz-app",
     "tag": "app",
-    "techStack": ["React", "Redux", "Node.js"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Redux",
+      "Node.js"
+    ]
+  },
+  {
     "title": "Job Board",
     "description": "A job board platform for posting and searching jobs.",
-    "url": "https://github.com/yourusername/job-board",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/job-board",
     "tag": "web",
-    "techStack": ["Next.js", "MongoDB", "TailwindCSS"]
-    },
-    {
+    "techStack": [
+      "Next.js",
+      "MongoDB",
+      "TailwindCSS"
+    ]
+  },
+  {
     "title": "Event Scheduler",
     "description": "A calendar and event scheduling app with notifications.",
-    "url": "https://github.com/yourusername/event-scheduler",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/event-scheduler",
     "tag": "utility",
-    "techStack": ["React", "FullCalendar", "Firebase"]
-    },
-    {
+    "techStack": [
+      "React",
+      "FullCalendar",
+      "Firebase"
+    ]
+  },
+  {
     "title": "Crypto Tracker",
     "description": "A cryptocurrency price tracker with charts and news.",
-    "url": "https://github.com/yourusername/crypto-tracker",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/crypto-tracker",
     "tag": "utility",
-    "techStack": ["React", "Chart.js", "CoinGecko API"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Chart.js",
+      "CoinGecko API"
+    ]
+  },
+  {
     "title": "Travel Blog",
     "description": "A travel blog platform with map integration and photo uploads.",
-    "url": "https://github.com/yourusername/travel-blog",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/travel-blog",
     "tag": "web",
-    "techStack": ["Gatsby", "GraphQL", "Mapbox"]
-    },
-    {
+    "techStack": [
+      "Gatsby",
+      "GraphQL",
+      "Mapbox"
+    ]
+  },
+  {
     "title": "Inventory Management System",
     "description": "A system for managing inventory, suppliers, and orders.",
-    "url": "https://github.com/yourusername/inventory-system",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/inventory-system",
     "tag": "app",
-    "techStack": ["React", "Node.js", "Express", "MySQL"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Node.js",
+      "Express",
+      "MySQL"
+    ]
+  },
+  {
     "title": "Learning Platform",
     "description": "An online learning platform with courses, quizzes, and progress tracking.",
-    "url": "https://github.com/yourusername/learning-platform",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/learning-platform",
     "tag": "web",
-    "techStack": ["Next.js", "Prisma", "PostgreSQL"]
-    },
-    {
+    "techStack": [
+      "Next.js",
+      "Prisma",
+      "PostgreSQL"
+    ]
+  },
+  {
     "title": "Music Player",
     "description": "A web-based music player with playlist and search features.",
-    "url": "https://github.com/yourusername/music-player",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/music-player",
     "tag": "app",
-    "techStack": ["React", "Redux", "Howler.js"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Redux",
+      "Howler.js"
+    ]
+  },
+  {
     "title": "Markdown Editor",
     "description": "A markdown editor with live preview and export options.",
-    "url": "https://github.com/yourusername/markdown-editor",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/markdown-editor",
     "tag": "utility",
-    "techStack": ["React", "TypeScript", "Marked.js"]
-    },
-    {
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Marked.js"
+    ]
+  },
+  {
     "title": "Restaurant Finder",
     "description": "A restaurant search and review app using Google Maps API.",
-    "url": "https://github.com/yourusername/restaurant-finder",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/restaurant-finder",
     "tag": "web",
-    "techStack": ["Vue.js", "Vuetify", "Google Maps API"]
-    },
-    {
+    "techStack": [
+      "Vue.js",
+      "Vuetify",
+      "Google Maps API"
+    ]
+  },
+  {
     "title": "Book Library",
     "description": "A digital library for managing and reviewing books.",
-    "url": "https://github.com/yourusername/book-library",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/book-library",
     "tag": "app",
-    "techStack": ["React", "Redux", "Firebase"]
-    },
-    {
+    "techStack": [
+      "React",
+      "Redux",
+      "Firebase"
+    ]
+  },
+  {
     "title": "News Aggregator",
     "description": "A news aggregator app with category filters and notifications.",
-    "url": "https://github.com/yourusername/news-aggregator",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/news-aggregator",
     "tag": "utility",
-    "techStack": ["Angular", "TypeScript", "NewsAPI"]
-    },
-    {
+    "techStack": [
+      "Angular",
+      "TypeScript",
+      "NewsAPI"
+    ]
+  },
+  {
     "title": "Demo Project Without Images",
     "description": "A project entry that does not have imageSmall or imageLarge fields.",
-    "url": "https://github.com/yourusername/demo-project",
-    "imageSmall": "https://placehold.co/600x160/d3d3d3/fff?text=Portfolio",
-    "imageLarge": "https://placehold.co/800x220/d3d3d3/fff?text=Portfolio",
+    "url": "https://github.com/raajeshsharma/demo-project",
     "tag": "demo",
-    "techStack": ["React"]
+    "techStack": [
+      "React"
+    ]
   }
 ]

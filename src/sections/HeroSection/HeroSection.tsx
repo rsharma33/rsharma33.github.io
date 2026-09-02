@@ -8,7 +8,7 @@ import { Button, Stack, Container, Typography } from '@mui/material';
 
 const HeroSection: React.FC = () => {
   return (
-  <SectionWrapper className='section-wrapper' id="hero-section">
+  <SectionWrapper className='section-wrapper' id="hero-section" sx={{ my: '4rem' }}>
     <Container maxWidth="lg">
       <HeroBox sx={heroCss.heroBox}>
         {/* Left: Text */}

@@ -1,24 +1,25 @@
 const appConfig = {
   name: "Rajesh Sharma",
-  title: "FullStack Developer & UI/UX Designer",
-  location: "Phoenix, Arizona, USA",
-  email: "rajesh@example.com",
+  title: "Senior Software Engineer",
+  location: "Helsingborg, Skåne County, Sweden",
+  email: "raajeshsh85+portfolio@gmail.com",
   phone: "+1-555-123-4567",
   website: "https://raajeshsharma.github.io",
-  summary: "Experienced FullStack Developer and UI/UX Designer with 16+ years in web and app design, passionate about building modern, user-centric digital products.",
+  summary: "Senior Software Engineer at Capgemini with deep experience in front-end architecture and full-stack delivery. I build React and Next.js applications on Node, Express and Azure, with a strong focus on cross-browser compatibility, accessibility and performance tuning.",
   social: [
     { label: "GitHub", url: "https://github.com/raajeshsharma" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/raajeshsharma" },
-    { label: "Twitter", url: "https://twitter.com/rsharma33" } 
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/raajeshsharma/" }
   ],
   sections: {
     heroSection: true,
     aboutSection: true,
     experienceSection: true,
     skillsSection: true,
+    skillsTabbedSection: false,
     projectsSection: true,
-    certificationSection: false,
-    qualificationSection: false
+    githubProjectsSection: false,
+    certificationSection: true,
+    qualificationSection: true
   },
   theme: {
     defaultMode:  "light", // 'light', 'dark', or 'system'

@@ -1,46 +1,56 @@
+'use client';
+
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import qualifications from '@/config/data/qualification.json'; // Adjust the import path as necessary
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import SchoolIcon from '@mui/icons-material/School';
+import qualificationData from '@/config/data/qualification.json';
+import { Qualification } from '@/types';
+import { SectionWrapper, sectionTitle, sectionContainer } from '@/styles/styles';
+import { QualificationSectionStyles as qualCss } from './QualificationSection.styled';
+
+const qualifications = qualificationData as Qualification[];
 
 export default function QualificationSection() {
-
   return (
-    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Box id="qualification" sx={{ mb: 8 }}>
-        <Typography variant="h4" component="h2" gutterBottom>
-          Qualification
-        </Typography>
-        <TableContainer>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>Year</TableCell>
-                <TableCell>Degree/Diploma</TableCell>
-                <TableCell>Univ/Inst</TableCell>
-                <TableCell>Place</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {qualifications.map((row: any, idx: number) => (
-                <TableRow key={idx}>
-                  <TableCell>{row.year}</TableCell>
-                  <TableCell>{row.degree}</TableCell>
-                  <TableCell>{row.institute}</TableCell>
-                  <TableCell>{row.place}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Box>
-    </Container>
+    <SectionWrapper id="qualification-section" className={'section-wrapper'}>
+      <Container maxWidth="lg" sx={sectionContainer}>
+        <Box id="qualification">
+          <Typography variant="h3" component="h2" sx={sectionTitle}>
+            Education
+          </Typography>
+
+          <Stack spacing={2} sx={qualCss.list}>
+            {qualifications.map((row: Qualification, idx: number) => (
+              <Paper
+                key={idx}
+                variant="outlined"
+                sx={qualCss.card}
+              >
+                <Box
+                  sx={qualCss.iconBox}
+                >
+                  <SchoolIcon fontSize="small" />
+                </Box>
+                <Box>
+                  <Typography variant="subtitle1" fontWeight={700}>
+                    {row.degree}
+                  </Typography>
+                  <Typography variant="body2" color="text.primary">
+                    {row.institute}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {row.year} | {row.place}
+                  </Typography>
+                </Box>
+              </Paper>
+            ))}
+          </Stack>
+        </Box>
+      </Container>
+    </SectionWrapper>
   );
 }

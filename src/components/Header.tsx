@@ -5,10 +5,12 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import ModeSwitch from './ModeSwitch';
+import profile from '@/lib/profile';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
@@ -20,12 +22,28 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-const navLinks = [
-  { label: 'Home', to: 'home' },
-  { label: 'About', to: 'about' },
-  { label: 'Experience', to: 'experience' },
-  { label: 'Qualification', to: 'qualification' },
-  { label: 'Portfolio', to: 'projects' },
+type NavLink = {
+  label: string;
+  to: string;
+  /** Home resolves to "/" rather than a section hash. */
+  isHome?: boolean;
+  children?: { label: string; to: string }[];
+};
+
+const navLinks: NavLink[] = [
+  { label: 'Home', to: 'hero-section', isHome: true },
+  { label: 'About', to: 'about-section' },
+  { label: 'Skills', to: 'skills-section' },
+  { label: 'Experience', to: 'experience-section' },
+  {
+    label: 'Qualification',
+    to: 'qualification-section',
+    children: [
+      { label: 'Education', to: 'qualification-section' },
+      { label: 'Certifications', to: 'certifications-section' },
+    ],
+  },
+  { label: 'Portfolio', to: 'portfolio-section' },
 ];
 
 const socialLinks = [
@@ -43,15 +61,54 @@ const logoStyle = {
 };
 
 export default function Header() {
-  // Smooth scroll handler
+  const pathname = usePathname();
+  const router = useRouter();
+
   const handleScroll = (id: string) => (e: React.MouseEvent) => {
     e.preventDefault();
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      router.push(`/#${id}`);
     }
     setMobileOpen(false); // close drawer on mobile after click
   };
+
+  // Home and the logo go to the site root rather than a section anchor, so the
+  // URL stays clean at "/".
+  const goHome = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setMobileOpen(false);
+
+    if (pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Drop any section hash left in the bar so a reload does not jump back down.
+      if (window.location.hash) window.history.replaceState(null, '', '/');
+    } else {
+      router.push('/');
+    }
+  };
+
+  // The home page renders behind a preloader, so the hash target is not in the
+  // DOM on arrival — poll briefly for it instead of scrolling once and missing.
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
+
+    let tries = 0;
+    const timer = setInterval(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        clearInterval(timer);
+      } else if (++tries > 40) {
+        clearInterval(timer);
+      }
+    }, 100);
+
+    return () => clearInterval(timer);
+  }, [pathname]);
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
@@ -73,33 +130,22 @@ export default function Header() {
   const drawer = (
     <Box sx={{ width: 250, p: 2 }} role="presentation" onClick={handleDrawerToggle}>
       {navLinks.map((link) =>
-        link.label === 'Qualification' ? (
-          <Box key={link.to} sx={{ mb: 1 }}>
+        link.children ? (
+          link.children.map((child) => (
             <Button
+              key={child.to}
               color="inherit"
-              endIcon={<KeyboardArrowDownIcon />}
-              onClick={handleMenuOpen}
-              sx={{ fontWeight: 500, width: '100%', justifyContent: 'flex-start' }}
+              onClick={handleScroll(child.to)}
+              sx={{ fontWeight: 500, width: '100%', justifyContent: 'flex-start', mb: 1 }}
             >
-              {link.label}
+              {child.label}
             </Button>
-            <Menu
-              anchorEl={anchorEl}
-              open={Boolean(anchorEl)}
-              onClose={handleMenuClose}
-              MenuListProps={{ 'aria-labelledby': 'qualification-button' }}
-              anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
-              transformOrigin={{ vertical: 'top', horizontal: 'left' }}
-            >
-              <MenuItem onClick={handleMenuClose}>B.Tech in Computer Science</MenuItem>
-              <MenuItem onClick={handleMenuClose}>Certified Web Developer</MenuItem>
-            </Menu>
-          </Box>
+          ))
         ) : (
           <Button
             key={link.to}
             color="inherit"
-            onClick={handleScroll(link.to)}
+            onClick={link.isHome ? goHome : handleScroll(link.to)}
             sx={{ fontWeight: 500, width: '100%', justifyContent: 'flex-start', mb: 1 }}
           >
             {link.label}
@@ -128,16 +174,46 @@ export default function Header() {
   );
 
   return (
-    <AppBar position="static" color="default" elevation={1} sx={{ bgcolor: 'background.paper' }}>
+    <AppBar
+      position="sticky"
+      color="default"
+      elevation={1}
+      sx={{ top: 0, bgcolor: 'background.paper', zIndex: (theme) => theme.zIndex.appBar }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ minHeight: 64 }}>
           {/* Logo/Brand */}
-          <Box sx={{ flex: '0 0 auto', display: 'flex', alignItems: 'center', minWidth: 120 }}>
+          <Box
+            component="a"
+            href="/"
+            onClick={goHome}
+            sx={{
+              flex: '0 0 auto',
+              display: 'flex',
+              alignItems: 'center',
+              minWidth: 120,
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+          >
             <Typography
               variant="h6"
               sx={logoStyle}
             >
-              UI Coder 
+              {profile.shortName}
+              <Box
+                component="span"
+                // Drawn as a circle rather than a period: Rubik's full stop is
+                // squarish, so scaling the glyph up reads as a block, not a dot.
+                sx={{
+                  display: 'inline-block',
+                  width: '0.42em',
+                  height: '0.42em',
+                  ml: '0.12em',
+                  borderRadius: '50%',
+                  bgcolor: 'primary.main',
+                }}
+              />
             </Typography>
           </Box>
           {/* Hamburger for mobile */}
@@ -156,7 +232,7 @@ export default function Header() {
           {!isMobile && (
             <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center', gap: 2 }}>
               {navLinks.map((link) =>
-                link.label === 'Qualification' ? (
+                link.children ? (
                   <Box key={link.to} sx={{ position: 'relative', display: 'inline-block', mx: 1 }}>
                     <Button
                       color="inherit"
@@ -199,15 +275,24 @@ export default function Header() {
                       anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                       transformOrigin={{ vertical: 'top', horizontal: 'left' }}
                     >
-                      <MenuItem onClick={handleMenuClose}>B.Tech in Computer Science</MenuItem>
-                      <MenuItem onClick={handleMenuClose}>Certified Web Developer</MenuItem>
+                      {link.children?.map((child) => (
+                        <MenuItem
+                          key={child.to}
+                          onClick={(e) => {
+                            handleScroll(child.to)(e);
+                            handleMenuClose();
+                          }}
+                        >
+                          {child.label}
+                        </MenuItem>
+                      ))}
                     </Menu>
                   </Box>
                 ) : (
                   <Box key={link.to} sx={{ position: 'relative', display: 'inline-block', mx: 1 }}>
                     <Button
                       color="inherit"
-                      onClick={handleScroll(link.to)}
+                      onClick={link.isHome ? goHome : handleScroll(link.to)}
                       sx={{
                         fontWeight: 500,
                         position: 'relative',

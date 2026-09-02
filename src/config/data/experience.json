@@ -1,58 +1,162 @@
 [
   {
-    "company": "Accenture Solutions Pvt Ltd.",
-    "location": "Tower B&C, 2nd Floor, Green Boulevard, Plot No- B-9/A, Sector-62, Noida – 201301, Uttar Pradesh",
-    "city": "Gurgaon",
-    "designation": "UI Lead",
-    "tenure": "April 2014 to Present",
-    "description": "<ul><li>Development of email campaigns and microsites.</li><li>Handling all type of JavaScript, JQuery, JSon and Ajax related tasks.</li></ul>"
+    "company": "Capgemini",
+    "companyFull": "Capgemini Technology Sverige AB",
+    "employmentType": "Full-time",
+    "tenure": "Nov 2018 – Present",
+    "current": true,
+    "roles": [
+      {
+        "designation": "Senior Software Engineer",
+        "tenure": "Jan 2025 – Present",
+        "location": "Helsingborg, Skåne County, Sweden",
+        "highlights": [
+          "Build and maintain React, Next.js and TypeScript front ends for public-sector digital services.",
+          "Own front-end architecture decisions — component design systems, state management and build tooling.",
+          "Drive cross-browser compatibility, accessibility and performance tuning across the delivered stack."
+        ],
+        "skills": ["React", "Next.js", "TypeScript", "Node.js", "Azure", "Git", "SASS"]
+      },
+      {
+        "designation": "Technical Manager",
+        "tenure": "Mar 2022 – Dec 2024",
+        "location": "Bengaluru, Karnataka, India · Hybrid",
+        "highlights": [
+          "Led a distributed front-end team through the full delivery lifecycle, from requirements analysis to release.",
+          "Set technical direction and coding standards, and reviewed architecture across concurrent workstreams.",
+          "Mentored and trained engineers, and acted as the escalation point for complex technical issues."
+        ],
+        "skills": ["React", "Node.js", "Express", "Microservices", "Azure", "Terraform", "Team Leadership"]
+      },
+      {
+        "designation": "Senior Consultant (UI Lead) — C1",
+        "tenure": "Nov 2018 – Apr 2022",
+        "location": "Bengaluru, Karnataka, India",
+        "highlights": [
+          "Worked with onshore managers to translate business requirements into e-commerce features on Demandware (Salesforce Commerce Cloud).",
+          "Led UI development for storefront experiences, owning templates, components and responsive behaviour.",
+          "Coordinated between project teams and business users to keep scope, design and delivery aligned."
+        ],
+        "skills": ["Salesforce Commerce Cloud", "JavaScript", "AngularJS", "SASS", "Bootstrap", "Git"]
+      }
+    ]
   },
   {
-    "company": "Sapient Consulting ltd.",
-    "location": "Unitech Infospace, Ground Floor, Tower A, Old Building, Sector 21, Old Delhi, Dundahera, Gurgaon-122016",
-    "city": "Gurgaon",
-    "designation": "Interactive Developer (L2)",
-    "tenure": "Aug 2012 to April 2014",
-    "description": "<ul><li>PSD to HTML conversion using table and div structure both and integrate that into web application</li><li>Handling all type of JavaScript, JQuery, Json and Ajax, tasks</li></ul>"
+    "company": "Accenture",
+    "companyFull": "Accenture Solutions Pvt Ltd.",
+    "employmentType": "Full-time",
+    "tenure": "Apr 2014 – Sep 2018",
+    "current": false,
+    "roles": [
+      {
+        "designation": "UI Team Lead (L9)",
+        "tenure": "Apr 2014 – Sep 2018",
+        "location": "Gurugram, Haryana, India",
+        "highlights": [
+          "Worked closely with onshore project managers to understand business requirements and build email campaigns accordingly.",
+          "Delivered responsive email campaigns and microsites with tested cross-client rendering.",
+          "Owned all JavaScript, jQuery, JSON and AJAX work for the team's deliverables."
+        ],
+        "skills": ["JavaScript", "jQuery", "AJAX", "JSON", "SASS", "Git", "Responsive Email"]
+      }
+    ]
   },
   {
-    "company": "Xicom Technologies ltd.",
-    "location": "512A Mahatta Towers, Community Center Janak puri, New Delhi 110058",
-    "city": "New Delhi",
-    "designation": "Sr. Flash Programmer cum Sr. Web designer",
-    "tenure": "Dec 2010 to July 2012",
-    "description": "<ul><li>Managing all flash related work, including animation and scripting both</li><li>PSD to HTML conversion using table and div structure both</li><li>Designing Layout for website and iPhone application</li></ul>"
+    "company": "SapientNitro",
+    "companyFull": "Sapient Consulting Ltd.",
+    "employmentType": "Full-time",
+    "tenure": "Aug 2012 – Apr 2014",
+    "current": false,
+    "roles": [
+      {
+        "designation": "Interactive Developer (L2)",
+        "tenure": "Aug 2012 – Apr 2014",
+        "location": "Gurgaon SEZ, Haryana, India",
+        "highlights": [
+          "Gathered requirements directly through client communication and turned them into working interfaces.",
+          "Made independent decisions to solve open-ended problem statements within delivery constraints.",
+          "Converted design files to semantic HTML and integrated the markup into web applications."
+        ],
+        "skills": ["HTML5", "CSS3", "SASS", "Bootstrap", "JavaScript", "jQuery", "AJAX"]
+      }
+    ]
   },
   {
-    "company": "Albion Informatics",
-    "location": "T-95A, C.L House, 2nd Floor, Gulmohar Enclave, Comm. Complex, Gautam nagar, New Delhi-110049",
-    "city": "New Delhi",
-    "designation": "Sr. Web designer",
-    "tenure": "Oct 2010 to Dec 2010",
-    "description": "<ul><li>Web page integration (slicing) in table and tableless</li><li>Templates customization for CRM (vtiger) and Manage the same</li></ul>"
+    "company": "Xicom Technologies",
+    "companyFull": "Xicom Technologies Ltd.",
+    "employmentType": "Full-time",
+    "tenure": "Jun 2010 – Aug 2012",
+    "current": false,
+    "roles": [
+      {
+        "designation": "Sr. Flash Programmer cum Website Developer",
+        "tenure": "Jun 2010 – Aug 2012",
+        "location": "Greater Delhi Area, India",
+        "highlights": [
+          "Created Flash intros and ad banners, covering both animation and ActionScript.",
+          "Developed working UI prototypes for cross-platform devices.",
+          "Designed layouts for websites and iPhone applications."
+        ],
+        "skills": ["Flash", "ActionScript", "Photoshop", "HTML", "CSS", "JSON", "jQuery"]
+      }
+    ]
   },
   {
     "company": "Webplanet",
-    "location": "810 Vishwasadan Tower, District Center Janakpuri, New Delhi",
-    "city": "New Delhi",
-    "designation": "Sr. Flash Programmer cum Sr. Web designer",
-    "tenure": "June 2009 to Oct 2010",
-    "description": "<ul><li>Making websites in Flash and all type of flash work including animation and programming</li><li>Web page integration (slicing) in table and tableless</li><li>Templates customization of opensource and licensing web applications like (Joomla, Wordpress, Interspire, Opencart, 3dcart etc)</li></ul>"
+    "companyFull": "Webplanet",
+    "employmentType": "Full-time",
+    "tenure": "Jun 2009 – Jun 2010",
+    "current": false,
+    "roles": [
+      {
+        "designation": "Sr. Flash Programmer cum Sr. Web Designer",
+        "tenure": "Jun 2009 – Jun 2010",
+        "location": "New Delhi, India",
+        "highlights": [
+          "Built full websites in Flash, handling animation and programming end to end.",
+          "Integrated web pages in both table and tableless layouts.",
+          "Customised templates for open-source and licensed platforms — Joomla, WordPress, Interspire, OpenCart and 3dcart."
+        ],
+        "skills": ["Flash", "ActionScript", "WordPress", "Joomla", "OpenCart", "HTML", "CSS"]
+      }
+    ]
   },
   {
     "company": "ACQA InfoTech",
-    "location": "38 Ansal Tower, Suite 1114, Nehru Place, New Delhi",
-    "city": "New Delhi",
-    "designation": "Web designer/Jr. Flash Programmer",
-    "tenure": "June 2008 to June 2009",
-    "description": "<ul><li>Designing website layouts, Flash Intro animation, and all type of flash work including action script.</li><li>Web page integration (slicing) in table and tableless.</li></ul>"
+    "companyFull": "ACQA InfoTech",
+    "employmentType": "Full-time",
+    "tenure": "Jun 2008 – Jun 2009",
+    "current": false,
+    "roles": [
+      {
+        "designation": "Web Designer / Jr. Flash Programmer",
+        "tenure": "Jun 2008 – Jun 2009",
+        "location": "Nehru Place, New Delhi, India",
+        "highlights": [
+          "Designed website layouts and Flash intro animations, including ActionScript work.",
+          "Integrated web pages in table and tableless layouts."
+        ],
+        "skills": ["Flash", "ActionScript", "Photoshop", "HTML", "CSS"]
+      }
+    ]
   },
   {
     "company": "ICE (Interactive Creativity Enablers)",
-    "location": "58/801, Sahyog Building, Nehru place",
-    "city": "New Delhi",
-    "designation": "Website Designer",
-    "tenure": "Aug 2007 to June 2008",
-    "description": "<ul><li>Worked as Website designer.</li><li>Flash animation, presentations</li><li>Graphic designing work for monthly newsletters.</li></ul>"
+    "companyFull": "ICE — Interactive Creativity Enablers",
+    "employmentType": "Full-time",
+    "tenure": "Aug 2007 – Jun 2008",
+    "current": false,
+    "roles": [
+      {
+        "designation": "Website Designer",
+        "tenure": "Aug 2007 – Jun 2008",
+        "location": "Nehru Place, New Delhi, India",
+        "highlights": [
+          "Designed websites, Flash animations and presentations.",
+          "Produced graphic design work for monthly newsletters."
+        ],
+        "skills": ["Photoshop", "Flash", "HTML", "CSS"]
+      }
+    ]
   }
 ]

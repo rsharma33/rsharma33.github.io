@@ -9,18 +9,26 @@ import Masonry from '@mui/lab/Masonry';
 import projectsData from '@/config/data/projects.json';
 import Link from 'next/link';
 import { Button } from '@mui/material';
-import { getClassByThemeMode } from '@/utils/utils';
 import { Project } from '@/types';
 import { masonryHeights } from '@/config/AppConfig';
+import ProjectCover from '@/components/ProjectCover';
+import { SectionWrapper, sectionTitle, sectionContainer } from '@/styles/styles';
+import { ProjectsSectionStyles as projectsCss } from './ProjectsSection.styled';
 
-const projects: Project[] = (projectsData as any[]).slice(0, 6);
+const allProjects = projectsData as Project[];
+
+// Which projects appear on the home page is set in projects.json via
+// "showOnHome"; the full set lives on /portfolio. Fall back to the first few so
+// the section is never empty if nothing is flagged.
+const featured = allProjects.filter((p) => p.showOnHome);
+const projects: Project[] = featured.length ? featured : allProjects.slice(0, 6);
 
 export default function ProjectsSection() {
   return (
-    <Box component="section" id="portfolio-section" sx={{ py: { xs: 2, md: 4 } }} className={getClassByThemeMode('section-wrapper darkBG', 'section-wrapper lightBG')}>
-      <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-        <Box id="projects" sx={{ mb: 8 }}>
-          <Typography variant="h3" fontWeight={900} mb={4} sx={{ fontFamily: 'Rubik, sans-serif' }}>
+    <SectionWrapper id="portfolio-section" className={'section-wrapper'}>
+      <Container maxWidth="lg" sx={sectionContainer}>
+        <Box id="projects">
+          <Typography variant="h3" component="h2" sx={sectionTitle}>
             Portfolio
           </Typography>
           <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={3}>
@@ -28,63 +36,28 @@ export default function ProjectsSection() {
               <Card
                 key={idx}
 
-                sx={{
-                  bgcolor: 'grey.900',
-                  color: 'common.white',
-                  borderRadius: 0,
-                  boxShadow: 3,
-                  p: 0,
-                  overflow: 'hidden',
-                  position: 'relative',
-                  cursor: 'pointer',
-                  display: 'block',
-                }}
+                variant="outlined"
+                sx={projectsCss.card}
               >
                 <Box
-                  sx={{
-                    position: 'relative',
-                    width: '100%',
-                    '&:hover .hoverTitle': {
-                      opacity: 1,
-                      pointerEvents: 'auto',
-                    },
-                  }}
+                  sx={projectsCss.media}
                 >
-                  <CardMedia
-                    component="img"
-                    image={project.imageLarge}
-                    alt={project.Project || project.title}
-                    sx={{
-                      width: '100%',
-                      display: 'block',
-                      objectFit: 'cover',
-                      bgcolor: 'grey.800',
-                      height: masonryHeights[idx % masonryHeights.length], // Assign height from array
-                      transition: 'filter 0.3s',
-                    }}
-                  />
+                  {project.imageLarge ? (
+                    <CardMedia
+                      component="img"
+                      image={project.imageLarge}
+                      alt={project.Project || project.title}
+                      sx={projectsCss.image(masonryHeights[idx % masonryHeights.length])}
+                    />
+                  ) : (
+                    <ProjectCover
+                      project={project}
+                      height={masonryHeights[idx % masonryHeights.length]}
+                    />
+                  )}
                   <Box
                     className="hoverTitle"
-                    sx={{
-                      position: 'absolute',
-                      left: 0,
-                      top: 0,
-                      width: '100%',
-                      height: '100%',
-                      bgcolor: 'rgba(30,30,30,0.82)',
-                      color: 'common.white',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      opacity: 0,
-                      transition: 'opacity 0.3s',
-                      pointerEvents: 'none',
-                      fontFamily: 'Rubik, sans-serif',
-                      fontWeight: 700,
-                      fontSize: { xs: '1.2rem', sm: '1.5rem' },
-                      textAlign: 'center',
-                      px: 2,
-                    }}
+                    sx={projectsCss.hoverTitle}
                   >
                     {project.Project || project.title}
                   </Box>
@@ -92,18 +65,13 @@ export default function ProjectsSection() {
               </Card>
             ))}
           </Masonry>
-          <Box sx={{ display: 'flex', justifyContent: 'center', mt: 6 }}>
+          <Box sx={projectsCss.cta}>
             <Link href="/portfolio">
               <Button
                 variant="contained"
                 color="error"
                 size="large"
-                sx={{
-                  px: 4,
-                  py: 1.5,
-                  textTransform: 'none',
-                  borderRadius: 0,
-                }}
+                sx={projectsCss.ctaButton}
               >
                 See All Projects
               </Button>
@@ -111,6 +79,6 @@ export default function ProjectsSection() {
           </Box>
         </Box>
       </Container>
-    </Box>
+    </SectionWrapper>
   );
 }

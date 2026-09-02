@@ -1,5 +1,8 @@
 export type Certification = {
-  duration: string;
   title: string;
   institute: string;
+  duration?: string;
+  issued?: string;
+  credentialId?: string;
+  url?: string;
 };
