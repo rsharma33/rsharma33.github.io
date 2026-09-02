@@ -1,3 +1,6 @@
+section[id] {
+  scroll-margin-top: 72px;
+}
 /* Remove the default before content/line from MUI Timeline items */
 .no-before::before {
   display: none !important;
