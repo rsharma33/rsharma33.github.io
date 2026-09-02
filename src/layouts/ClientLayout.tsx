@@ -9,6 +9,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
 import { getAppliedTheme } from "@/utils/utils";
 import Preloader from "@/components/Preloader";
+import ChatBot from "@/components/ChatBot";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -38,6 +39,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
                     <Header />
                     {children}
                     <Footer />
+                    <ChatBot />
                 </main>
             )}
         </ThemeProvider>

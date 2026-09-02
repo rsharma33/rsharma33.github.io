@@ -1,0 +1,22 @@
+{
+  "name": "Rajesh Sharma",
+  "shortName": "Rajesh",
+  "title": "Senior Software Engineer",
+  "tagline": "Full-Stack Developer",
+  "company": "Capgemini Technology Sverige AB",
+  "location": "Helsingborg, Skåne County, Sweden",
+  "careerStart": "2007-08-01",
+  "summary": "Senior Software Engineer at Capgemini with deep experience in front-end architecture and full-stack delivery. I build React and Next.js applications on Node, Express and Azure, with a strong focus on cross-browser compatibility, accessibility and performance tuning.",
+  "about": [
+    "I have spent my career on the front end of the web — from Flash and hand-sliced layouts in 2007 to React, TypeScript and Next.js today. Along the way I moved from building pages to leading the teams that build them, as UI Lead at Accenture and Technical Manager at Capgemini, before relocating to Sweden.",
+    "My day-to-day sits across the whole delivery lifecycle: requirements analysis, system design, coding, testing, debugging, documentation and release. I care about design systems and mockup fidelity as much as bundle size, and I am equally comfortable in Photoshop and Adobe XD as in a Terraform module.",
+    "I have delivered on enterprise platforms including Salesforce Commerce Cloud (Demandware), Adobe Experience Manager, Magento and WordPress. Currently I am focused on cloud (Azure and GCP), DevOps practice, and GenAI integration."
+  ],
+  "links": {
+    "github": "https://github.com/raajeshsharma",
+    "linkedin": "https://www.linkedin.com/in/raajeshsharma/",
+    "portfolio": "https://raajeshsharma.github.io"
+  },
+  "avatar": "/assets/summary-pic.png",
+  "heroImage": "/assets/hero-image.png"
+}
