@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": false,
   "homepage": "https://rsharma33.github.io/rsharma33.github.io",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

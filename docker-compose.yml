@@ -1,5 +1,18 @@
 version: '3.8'
 services:
+  proxy:
+    image: nginx:alpine
+    container_name: Rajesh_Portfolio_Proxy
+    depends_on:
+      - web
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - web_bridge
+    restart: unless-stopped
+
   web:
     container_name: Rajesh_Portfolio
     build:
@@ -12,7 +25,7 @@ services:
       - web_bridge
     environment:
       - NODE_ENV=development
-    command: pnpm run dev
+    command: npm run dev
     restart: unless-stopped
     volumes:
       - .:/app

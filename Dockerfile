@@ -1,8 +1,5 @@
 # Base stage
-FROM node:20-alpine AS base
-
-# Install pnpm
-RUN npm install -g pnpm
+FROM node:24-alpine AS base
 
 WORKDIR /app
 
@@ -10,10 +7,10 @@ WORKDIR /app
 FROM base AS deps
 
 # Copy package files
-COPY package.json pnpm-lock.yaml ./
+COPY package.json package-lock.json ./
 
 # Install dependencies
-RUN pnpm install --frozen-lockfile
+RUN npm ci
 
 # Development stage
 FROM base AS development
@@ -30,7 +27,7 @@ COPY . .
 EXPOSE 3000
 
 # Start development server
-CMD ["pnpm", "run", "dev"]
+CMD ["npm", "run", "dev"]
 
 # Builder stage
 FROM base AS builder
@@ -42,7 +39,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 # Build the application
-RUN pnpm run build
+RUN npm run build
 
 # Production stage
 FROM base AS production
@@ -62,4 +59,4 @@ COPY --from=builder /app/node_modules ./node_modules
 EXPOSE 3000
 
 # Start production server
-CMD ["pnpm", "run", "start"]
+CMD ["npm", "run", "start"]
