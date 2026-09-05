@@ -40,7 +40,7 @@ const HeroSectionStyles = {
   }
 };
 
-const HeroBox = styled('section')(({ theme }) => ({
+const HeroBox = styled('section')(() => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',

@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         {/* Left: Text */}
         <Box sx={heroCss.left}>
           <Typography variant="h1" sx={heroCss.left.h1}>
-            Hi, I'm
+            Hi, I&apos;m
             <Box component="span" sx={heroCss.left.name}>Rajesh <br/>Sharma!</Box>
           </Typography>
           <Typography variant="h6" sx={heroCss.left.subtitle}>

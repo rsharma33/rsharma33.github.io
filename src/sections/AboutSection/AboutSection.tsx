@@ -8,12 +8,12 @@ import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 import StarIcon from '@mui/icons-material/Star';
 import Image from 'next/image';
-import { getClassByThemeMode } from '@/utils/utils';
+import { useClassByThemeMode } from '@/utils/utils';
 import { BTN } from '@/styles/styles';
 
 export default function AboutSection() {
   return (
-    <Box component="section" id="about-section" sx={{ py: { xs: 2, md: 4 } }} className={getClassByThemeMode('section-wrapper darkBG', 'section-wrapper lightBG')}>
+    <Box component="section" id="about-section" sx={{ py: { xs: 2, md: 4 } }} className={useClassByThemeMode('section-wrapper darkBG', 'section-wrapper lightBG')}>
       <Container sx={{ mt: 4, mb: 4 }}>
         <Box
           sx={{ 
@@ -45,7 +45,7 @@ export default function AboutSection() {
                 position: 'relative',
                 zIndex: 2,
                 objectFit: 'cover',
-                filter: getClassByThemeMode('none', 'invert(1)')
+                filter: useClassByThemeMode('none', 'invert(1)')
               }}
               />
               {/* Experience Badge */}
@@ -68,7 +68,7 @@ export default function AboutSection() {
               <Box component="span" color="error.main" fontWeight={900}><br />in Web development.</Box>
             </Typography>
             <Typography variant="body1" color="inherit" mb={2}>
-              I'm a FullStack Developer, specializing in Frontend development. I have extensive experience with web technologies including Node, Express, Webpack, TypeScript, React, Redux, Tailwind, SASS and Bootstrap, and a strong focus on cross-browser compatibility and performance tuning.
+              I&apos;m a FullStack Developer, specializing in Frontend development. I have extensive experience with web technologies including Node, Express, Webpack, TypeScript, React, Redux, Tailwind, SASS and Bootstrap, and a strong focus on cross-browser compatibility and performance tuning.
             </Typography>
             <Button variant="outlined" color="error" size="large" endIcon={<DownloadIcon />} sx={{ ...BTN }}>
               DOWNLOAD RESUME
@@ -76,14 +76,14 @@ export default function AboutSection() {
           </Box>
           {/* Right: Stats Card */}
           {/* <Box sx={{ 
-            color: getClassByThemeMode('white', 'black'), 
+            color: useClassByThemeMode('white', 'black'), 
             flexBasis: { md: 260 }, 
             flexGrow: 0, 
             flexShrink: 0, 
             maxWidth: { md: 260 }, 
             minWidth: { md: 220 }
           }}>
-            <Card sx={{ backgroundColor: getClassByThemeMode('grey.900', 'white'), color: 'inherit', p: 4, borderRadius: 0, minHeight: 320, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <Card sx={{ backgroundColor: useClassByThemeMode('grey.900', 'white'), color: 'inherit', p: 4, borderRadius: 0, minHeight: 320, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
               <Box textAlign="center" mb={4}>
                 <Typography variant="h4" fontWeight={700}>14+</Typography>
                 <Typography variant="subtitle2" sx={{ opacity: 0.8 }}>Awards Won</Typography>

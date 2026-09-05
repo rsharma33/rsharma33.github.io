@@ -23,7 +23,7 @@ export function randomInt(min: number, max: number): number {
 }
 
 // Checks if a value is empty (null, undefined, empty string, or empty array)
-export function isEmpty(value: any): boolean {
+export function isEmpty(value: unknown): boolean {
     return (
         value === null ||
         value === undefined ||
@@ -39,7 +39,7 @@ export function isEmpty(value: any): boolean {
  * @param theme - (optional) theme mode ('dark' or 'light' or 'system')
  * @returns The class name based on the current theme mode
  */
-export function getClassByThemeMode(
+export function useClassByThemeMode(
     classForDarkMode: string,
     classForLightMode: string
 ): string {

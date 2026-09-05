@@ -20,7 +20,6 @@ import { useTheme } from '@mui/material/styles';
 // Social icons
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
 
 type NavLink = {
   label: string;

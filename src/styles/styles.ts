@@ -1,5 +1,4 @@
 import { styled } from '@mui/material';
-import { preload } from 'react-dom';
 
 const BTN = {
     fontSize: { xs: '1rem', md: '1.1rem' },
@@ -15,7 +14,7 @@ const BTN = {
     },
 };
 
-const SectionWrapper = styled('section')(({ theme, className, id }) => ({
+const SectionWrapper = styled('section')(({ theme }) => ({
   width: '100%',
   bgcolor: theme.palette.background.default,
   // No vertical margin: sections that carry a band colour must sit flush against

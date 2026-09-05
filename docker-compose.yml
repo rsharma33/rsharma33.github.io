@@ -18,19 +18,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: development
+      target: ${BUILD_TARGET:-production}
     expose:
       - 3000
     networks:
       - web_bridge
-    environment:
-      - NODE_ENV=development
-    command: npm run dev
+    env_file:
+      - .env
     restart: unless-stopped
-    volumes:
-      - .:/app
-      - /app/node_modules
-      - /app/.next
 networks:
   web_bridge:
     external: true

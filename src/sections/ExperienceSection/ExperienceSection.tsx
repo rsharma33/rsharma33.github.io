@@ -9,7 +9,7 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import experienceData from '@/config/data/experience.json';
 import { Experience, Role } from '@/types';
-import { getClassByThemeMode } from '@/utils/utils';
+import { useClassByThemeMode } from '@/utils/utils';
 import { SectionWrapper, sectionTitle, sectionContainer } from '@/styles/styles';
 import { ExperienceSectionStyles as expCss } from './ExperienceSection.styled';
 
@@ -19,7 +19,7 @@ export default function ExperienceSection() {
   return (
     <SectionWrapper
       id="experience-section"
-      className={getClassByThemeMode('section-wrapper darkBG', 'section-wrapper lightBG')}
+      className={useClassByThemeMode('section-wrapper darkBG', 'section-wrapper lightBG')}
     >
       <Container maxWidth="lg" sx={sectionContainer}>
         <Box id="experience">

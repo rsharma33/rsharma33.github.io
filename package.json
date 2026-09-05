@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "pnpm run build && touch out/.nojekyll",
+    "predeploy": "GITHUB_PAGES=true pnpm run build && touch out/.nojekyll",
     "deploy": "gh-pages -d out --dotfiles",
     "debug": "set NODE_OPTIONS='--inspect' && next dev"
   },

@@ -7,13 +7,13 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import profile from '@/lib/profile';
-import { getClassByThemeMode } from '@/utils/utils';
+import { useClassByThemeMode } from '@/utils/utils';
 
 export default function Footer() {
     return (
         <Box
             component="footer"
-            className={getClassByThemeMode('darkBG', 'lightBG')}
+            className={useClassByThemeMode('darkBG', 'lightBG')}
             sx={{ py: 4, mt: 'auto' }}
         >
             <Container maxWidth="lg">

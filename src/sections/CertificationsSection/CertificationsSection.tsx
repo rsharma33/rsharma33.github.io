@@ -13,7 +13,7 @@ import certificationData from '@/config/data/certifications.json';
 import { Certification } from '@/types';
 import { SectionWrapper, sectionTitle, sectionContainer } from '@/styles/styles';
 import { CertificationsSectionStyles as certCss } from './CertificationsSection.styled';
-import { getClassByThemeMode } from '@/utils/utils';
+import { useClassByThemeMode } from '@/utils/utils';
 
 const certifications = certificationData as Certification[];
 
@@ -21,7 +21,7 @@ export default function CertificationsSection() {
   return (
     <SectionWrapper
       id="certifications-section"
-      className={getClassByThemeMode('section-wrapper darkBG', 'section-wrapper lightBG')}
+      className={useClassByThemeMode('section-wrapper darkBG', 'section-wrapper lightBG')}
     >
       <Container maxWidth="lg" sx={sectionContainer}>
         <Box id="certifications">

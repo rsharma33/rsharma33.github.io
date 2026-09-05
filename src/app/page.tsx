@@ -12,7 +12,7 @@ import CertificationsSection from '../sections/CertificationsSection/Certificati
 import HeroSection from '../sections/HeroSection/HeroSection';
 
 export default function Home() {
-  const { heroSection, aboutSection, skillsSection, skillsTabbedSection, experienceSection, projectsSection, githubProjectsSection, certificationSection, qualificationSection, contactSection } = appConfig.sections;
+  const { heroSection, aboutSection, skillsSection, skillsTabbedSection, experienceSection, projectsSection, githubProjectsSection, certificationSection, qualificationSection } = appConfig.sections;
 
   return (
     <>
